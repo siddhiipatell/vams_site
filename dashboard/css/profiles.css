@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --grey: #F1F0F6;
+    --dark-grey: #8D8D8D;
+    --light-grey: #e6e6e6;
+    --light: #fff;
+    --dark: #000;
+    --green: #81D43A;
+    --light-green: #E3FFCB;
+    --main: #1775F1;
+    --light-blue: #D0E4FF;
+    --dark-main: #0C5FCD;
+    --red: #FC3B56;
+}
+
+input {
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+
+}
+
+button.dt-button,
+div.dt-button,
+a.dt-button {
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--light);
+    background: var(--main);
+}
+
+button.dt-button:hover,
+div.dt-button:hover,
+a.dt-button:hover {
+    color: var(--dark);
+}
+
+.dataTables_wrapper .dataTables_filter label {
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    background: var(--grey);
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    border-radius: 5px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background: var(--light-grey);
+}
+
+/* 
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:active{
+    background-color: var(--main);
+    color: var(--light);
+} */
+
+/* .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background-color: var(--dark-main);
+    color: var(--light);
+    border: none;
+} */
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: var(--dark-grey);
+    color: var(--light);
+}
+
+table {
+    width: 100%;
+    /* border: 1px solid var(--dark); */
+
+}
+
+.content-data button {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--main);
+    color: var(--light);
+    font-size: 18px;
+    /* float: right; */
+}
+
+.content-data button:hover {
+    background: var(--light-grey);
+    color: var(--dark);
+    cursor: pointer;
+}
+
+td .icon {
+    text-decoration: none;
+    color: var(--main);
+    padding: 10px;
+    height: -10px;
+}
+
+td .icon.del {
+    color: var(--red);
+}
+
+.content-data {
+    overflow-x: auto;
+}
+
+.add-button {
+    /* width: 100%; */
+    float: right;
+    text-align: right;
+}
+
+@media screen and (max-width: 640px) {
+
+    /* #example{
+        overflow-x: auto;
+    } */
+    .add-button {
+        float: none !important;
+        text-align: center;
+    }
+
+    /* .dataTables_wrapper{
+        width: ;
+        display: block !important;
+    } 
+    .content-data{
+        display: block;
+    } */
+
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Admin Panel</title>
+    <link href="/assets/img/asset9.png" rel="icon">
+    <link href="/assets/img/asset9.png" rel="apple-touch-icon">
+
+    <link rel="stylesheet" href="/dashboard/css/style.css">
+    <link rel="stylesheet" href="/dashboard/css/dashboard.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <section id="sidebar">
+        <a href="#" class="brand"><img class="icon" src="/assets/img/logo3.png" alt=""></i>VAMS</a>
+        <ul class="side-menu">
+            <li><a href="/dashboard/dashboard.html" class="active"><i class='bi bi-house icon'></i> Dashboard</a></li>
+
+
+            <li><a href="#"><i class="bi bi-person icon"></i>Customer<i class='bi bi-chevron-right icon-right'></i></a>
+                <ul class="side-dropdown">
+                    <li><a href="/dashboard/customer/profiles.html">Profiles</a></li>
+                    <li><a href="/dashboard/customer/contracts.html">Contracts</a></li>
+                    <li><a href="/dashboard/customer/campaigns.html">Campaigns</a></li>
+                    <li><a href="/dashboard/customer/inquires.html">Inquires</a></li>
+                    <li><a href="/dashboard/customer/statistics.html">Statistics</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="bi bi-cash icon"></i>Investor<i class='bi bi-chevron-right icon-right'></i></a>
+                <ul class="side-dropdown">
+                    <li><a href="/dashboard/investor/profiles.html">Profiles</a></li>
+                    <li><a href="/dashboard/investor/contracts.html">Contracts</a></li>
+                    <li><a href="/dashboard/investor/statistics.html">Statistics</a></li>
+                    <li><a href="/dashboard/investor/receivable.html">Receivable</a></li>
+                    <li><a href="/dashboard/investor/received.html">Received</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#"><i class="bi bi-briefcase icon"></i>Regional Admin<i
+                        class='bi bi-chevron-right icon-right'></i></a>
+                <ul class="side-dropdown">
+                    <li><a href="/dashboard/regional-admin/profiles.html">Profiles</a></li>
+                    <li><a href="/dashboard/regional-admin/contracts.html">Contracts</a></li>
+                    <li><a href="/dashboard/regional-admin/statistics.html">Statistics</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="bi bi-building icon"></i>Advertiser<i
+                        class='bi bi-chevron-right icon-right'></i></a>
+                <ul class="side-dropdown">
+                    <li><a href="/dashboard/advertiser/profiles.html">Profiles</a></li>
+                    <li><a href="/dashboard/advertiser/contracts.html">Contracts</a></li>
+                    <li><a href="/dashboard/advertiser/statistics.html">Statistics</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#"><i class="bi bi-shop-window icon"></i>Aggregator<i
+                        class='bi bi-chevron-right icon-right'></i></a>
+                <ul class="side-dropdown">
+                    <li><a href="/dashboard/aggregator/profiles.html">Profiles</a></li>
+                    <li><a href="/dashboard/aggregator/contracts.html">Contracts</a></li>
+                    <li><a href="/dashboard/aggregator/statistics.html">Statistics</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="bi bi-pencil icon"></i>Ad Designer<i
+                        class='bi bi-chevron-right icon-right'></i></a>
+                <ul class="side-dropdown">
+                    <li><a href="/dashboard/ad-designer/profiles.html">Profiles</a></li>
+                    <li><a href="/dashboard/ad-designer/contracts.html">Contracts</a></li>
+                    <li><a href="/dashboard/ad-designer/statistics.html">Statistics</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="bi bi-nut icon"></i>Hardware Supplier<i
+                        class='bi bi-chevron-right icon-right'></i></a>
+                <ul class="side-dropdown">
+                    <li><a href="/dashboard/hardware-supplier/profiles.html">Profiles</a></li>
+                    <li><a href="/dashboard/hardware-supplier/contracts.html">Contracts</a></li>
+                    <li><a href="/dashboard/hardware-supplier/statistics.html">Statistics</a></li>
+                    <li><a href="/dashboard/hardware-supplier/devices.html">Devices</a></li>
+
+                </ul>
+            </li>
+            <li><a href="/dashboard/viewers/viewers.html"><i class="bi bi-eye icon"></i>Viewers</a>
+            </li>
+
+            <li><a href="#"><i class="bi bi-badge-ad icon"></i>Advertisement<i
+                        class='bi bi-chevron-right icon-right'></i></a>
+                <ul class="side-dropdown">
+                    <li><a href="/dashboard/advertisement/ad-details.html">Ad Details</a></li>
+                    <li><a href="/dashboard/advertisement/ad-planner.html">Ad Planner</a></li>
+                    <li><a href="/dashboard/advertisement/ad-campaign.html">Ad Campaigns</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="bi bi-calendar icon"></i>Plans<i class='bi bi-chevron-right icon-right'></i></a>
+                <ul class="side-dropdown">
+                    <li><a href="/dashboard/plans/revenue-plans.html">Revenue Plans</a></li>
+                    <li><a href="/dashboard/plans/payout-plans.html">Payout Plans</a></li>
+                    <li><a href="/dashboard/plans/statistics.html">Plan Statistics</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#"><i class="bi bi-wallet2 icon"></i>Accounts<i class='bi bi-chevron-right icon-right'></i></a>
+                <ul class="side-dropdown">
+                    <li><a href="/dashboard/accounts/receivable.html">Receivable</a></li>
+                    <li><a href="/dashboard/accounts/receipts.html">Receipts</a></li>
+                    <li><a href="/dashboard/accounts/payable.html">Payable</a></li>
+                    <li><a href="/dashboard/accounts/paid.html">Paid</a></li>
+
+                </ul>
+            </li>
+            <li><a href="#"><i class="bi bi-clipboard icon"></i>Reports<i
+                        class='bi bi-chevron-right icon-right'></i></a>
+                <ul class="side-dropdown">
+                    <li><a href="/dashboard/reports/lists.html">Lists</a></li>
+                    <li><a href="/dashboard/reports/rate-card.html">Rate Card</a></li>
+                    <li><a href="/dashboard/reports/dynamic-rate-card.html">Dynamic <br>Rate Card</a></li>
+                    <li><a href="/dashboard/reports/top-perform.html">Top Performing</a></li>
+
+                </ul>
+            </li>
+            <li><a href="#"><i class="bi bi-gear icon"></i>Configuration<i
+                        class='bi bi-chevron-right icon-right'></i></a>
+                <ul class="side-dropdown">
+                    <li><a href="/dashboard/configuration/cms.html">CMS</a></li>
+                    <li><a href="/dashboard/configuration/support-team.html">Support Team</a></li>
+                    <li><a href="/dashboard/configuration/location.html">Location</a></li>
+                </ul>
+            </li>
+    </section>
+    <!-- sidebar -->
+    <section id="content">
+        <!-- navbar -->
+        <nav>
+            <i class='bi bi-list toggle-sidebar'></i>
+            <form action="#">
+                <div class="form-group">
+                    <input type="text" placeholder="Search...">
+                    <i class="bi bi-search icon"></i>
+                </div>
+            </form>
+            <a href="#" class="nav-link">
+                <i class="bi bi-bell icon"></i>
+                <span class="badge">5</span>
+            </a>
+            <a href="#" class="nav-link">
+                <i class="bi bi-chat-left-dots icon"></i>
+                <span class="badge">8</span>
+            </a>
+            <span class="divider"></span>
+            <div class="profile">
+                <img src="/dashboard/img/profile-logo.webp" alt="">
+                <ul class="profile-link">
+                    <li><a href="#"><i class="bi bi-person-circle icon"></i> Profile</a></li>
+                    <li><a href="#"><i class="bi bi-gear icon"></i> Settings</a></li>
+                    <li><a href="#"><i class="bi bi-box-arrow-right icon"></i> Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- navbar -->
+        <!-- main -->
+        <main>
+            <h1 class="title">Statistics</h1>
+            <ul class="breadcrumbs">
+                <li><a href="/dashboard/dashboard.html">Home</a></li>
+                <li class="divider">/</li>
+                <li><a href="#" class="active1">Regional Admin</a></li>
+                <li class="divider">/</li>
+                <li><a href="#" class="active1">Statistics</a></li>
+            </ul>
+
+
+        </main>
+        <!-- main -->
+    </section>
+
+
+    <script src="/dashboard/js/script1.js"></script>
+    <script src="/dashboard/js/script2.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>

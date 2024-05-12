@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="/assets/img/asset9.png" rel="icon">
+    <link href="/assets/img/asset9.png" rel="apple-touch-icon">-icon">
+
+    <link rel="stylesheet" href="login.css">
+
+
+    <script>
+
+        function redirect() {
+            var email = document.getElementById('email').value
+            var pass = document.getElementById('password').value
+            if (email == "admin@email.com" && pass == "admin") {
+                window.open("/dashboard/ad-designer-panel/dashboard.html", "_self");
+            }
+            else {
+                alert("Incorrect username or password")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container" >
+        <div class="image-container">
+            <img src="/dashboard/img/designer_Monochromatic.svg" class="image" alt="">
+        </div>  
+        <div class="form-container">
+            <div class="form-layout">
+                <h2>Ad Designer Login</h2>
+                <h3>Login into your account</h3>
+
+
+                <!-- <hr> -->
+                <form>
+                    <div class="form-layout-container">
+                        <div class="row">
+                            <div class="col">
+                                <!-- <label>Username</label> -->
+                                <span><i class="bi bi-envelope icon"></i></span>
+                                <input type="email" class="form-control" id="email" placeholder="Email"  required/>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <!-- <label>Password</label> -->
+                                <span><i class="bi bi-key icon"></i></span>
+                                <span><i class="bi bi-eye-slash icon"></i></span>
+                                <input type="password" class="form-control" id="password" placeholder="Password" required/>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <input type="button" id="submit" value="Login" onclick="redirect()">
+
+                    <p><a href="forgot-password.html">Forgot Password?</a></p>
+                    <p>or</p>
+                    <div class="alt-links">
+                        <span><i class="bi bi-facebook"></i></span>
+                        <span><i class="bi bi-google"></i></span>
+                    </div> -->
+                    <p><a href="#">Forgot Password?</a></p>
+                    <div class="remember">
+                        <input type="checkbox" id="remember">
+                        <p>Remember Me</p>
+                    </div>
+                    <input type="button" id="submit" value="login" onclick="redirect()">
+
+                    <!-- <div class="remember">
+                    <input type="checkbox" id="remember">
+                    <p>Remember Me</p>
+                </div> -->
+                <!-- <p class="register">Not a member? <a href="#">Register Here</a></p> -->
+
+                </form> 
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
